@@ -1,54 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+
 *{
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;    
     text-decoration: none;
-    box-sizing: border-box;
+    box-sizing: border-box;   
 } 
-
-.cursor{
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    background: transparent;
-    border: 2px solid #74BEAF;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%,-50%);
-    transition: .1s;
-    z-index: 7;
-}
-
-.cursor-two{
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    background-color: #D9763D;
-    border-radius: 50%;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-    transform: translate(-50%,-50%);
-    transition: .15s;
-    z-index: 7;
-}
-
-
-@media screen and (max-width:1000px){
-    .cursor{
-        display: none;
-    }
-    .cursor-two{
-        display: none;
-    }
-}
 
 
 header{
     position: relative;
-    height: 100vh;
+    height: 790px;
     background: url(etienne-beauregard-riverin-B0aCvAVSX8E-unsplash.png);
     background-size: cover;
 }
@@ -56,13 +20,13 @@ header{
 .header-overlay{
     position: absolute;
     width: 100%;
-    height: 100vh;
+    height: 790px;
     background: url(overlay.png);
     background-size: cover;
 }
 
 .header-con{
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     position: relative;
 }
@@ -72,26 +36,41 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 0;
+    border-bottom: 0.5px solid #fff;
 }
 
+.nav-bar div img{
+    width: 147px;
+    height: 50px;
+    object-fit: cover;
+}
 nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 30px;
 }
 
 nav ul li{
     list-style: none;
+    margin-right: 50px;
 }
 
-nav ul li a{
-    color: #f8f8f8;
+nav ul li :last-child{
+    margin-right: 0;
+ }
+
+
+nav ul li a {
+    color: #f8f8f8;      
 }
+
 
 
 .hero-vis{
     position: absolute;
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
     top: 20%;
     left: 0;
@@ -101,8 +80,280 @@ nav ul li a{
     align-items: center;
 }
 
+.head-text {
+    flex-basis: 51%;
+}
+
 .head-text h2{
-    width: 76%;
     color: #f8f8f8;
     font-size: 52px;
+    font-weight: 700;
 }
+
+.map{
+    flex-basis: 40%;
+}
+
+.sort{
+    width: 92%;
+    margin: 0 auto;
+    padding: 15px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.sort-box{
+    margin: 0 auto;
+    background: #f9f9f9;
+    border: 2px solid #e6e6e6;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sort-box div{
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+
+.type{
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px 0 0 8px;
+}
+
+.type img{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.hood{
+    flex-basis: 45%;
+    display: flex;
+    border-left: 2px solid #e6e6e6;
+    justify-content: center;
+    align-items: center;  
+}
+
+.hood img{
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.search-icon{
+    flex-basis: 15%;
+    background: #23A6F0;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+
+.minimum{
+   width: 85%; 
+   margin: 0 auto;
+   margin-top: 80px;
+}
+
+.minimum span{
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.mini-flex{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left{
+    flex-basis: 45%;
+}
+
+.right{
+    flex-basis: 65%;
+}
+
+.icon-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-box{
+    width: 77px;
+    height: 77px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffff;
+    box-shadow: 0 0 10px 0px #e1e1e1;
+}
+
+.icon-flex p{
+    margin-top: 15px;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+
+.list{
+    background: #f5f5f5;
+}
+
+.list-con{
+    width: 85%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+
+.properties{
+   display: flex;
+   justify-content: space-between;
+}
+
+.properties button{
+    border: none;
+    color: #fff;
+    background: #F4511E;
+    padding: 15px 18px;
+}
+
+.prop-divs{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.div-one{
+    background: #fff;
+    flex-basis: 29%;
+    border-radius: 20px;
+}
+
+.padded-div{
+    padding:20px;
+}
+
+.div-two{
+    background: #fff;
+    flex-basis: 29%;
+    border-radius: 20px;
+}
+
+.div-three{
+    background: #fff;
+    flex-basis: 29%;
+    border-radius: 20px;
+}
+
+.padded-div p{
+    width: 80%;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.padded-div span{
+  font-size: 14px; 
+  color: #818181; 
+  margin-bottom: 10px; 
+}
+
+.padded-div h3{
+    color: #F4511E;
+    margin-top: 8px;
+    font-weight: 700;
+}
+
+.rendez{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #E4E4E4;
+}
+
+
+.rendez div{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rendez div img{
+    margin-right: 10px;
+}
+
+.side-border{
+    border-left: 1px solid #E4E4E4;
+    border-right: 1px solid #E4E4E4;
+}
+
+
+
+
+.grid{
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid-image{
+    flex-basis: 60%;
+}
+
+.grid-image img{
+    width: 100%;
+}
+
+.grid-con{
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-text{
+    flex-basis: 35%;
+}
+
+.grid-text h2{
+    font-size: 40px;
+    font-weight: bolder;
+    line-height: 54px;
+}
+
+.grid-text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+.grid-text button{
+    width: 185px;
+    height: 63px;
+    margin-top: 20px;
+    border: none;
+    background: #F4511E;
+    color: #fff;
+    border-radius: 13px;
+}
+
+
+
+
+
+
+
+
+
