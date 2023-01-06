@@ -126,7 +126,7 @@ nav ul li a {
 .sort{
     width: 92%;
     margin: 0 auto;
-    padding: 15px;
+    padding: 10px;
     background: #fff;
     border-radius: 8px;
 }
@@ -147,6 +147,40 @@ nav ul li a {
     height: 50px;
 }
 
+.promo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+
+.promo-field{
+    width: 60%;
+    height: 50px;
+    padding: 10px 20px;
+    color: #343434;
+    font-family:'MonumentExtended-Ultrabold';
+    border: 2px solid #989898 ;
+    border-radius: 10px;
+    opacity: 50%;
+}
+
+.promo ::placeholder{
+    font-size: 14px;
+    color: #3F3F3F;
+    font-family:'MonumentExtended-Ultrabold';
+}
+
+
+.promo button{
+    width: 25%;
+    color: #3F3F3F;
+    font-family:'MonumentExtended-Ultrabold';
+    border: none;
+    border-radius: 10px;
+}
+
+
+
 .type{
     flex-basis: 40%;
     display: flex;
@@ -155,10 +189,14 @@ nav ul li a {
     border-radius: 8px 0 0 8px;
 }
 
-.type img{
-    margin-left: 20px;
-    cursor: pointer;
-}
+.custom-type{
+    font-size: 14px;
+    padding: 10px 10px;
+    border: none;
+    background: transparent;
+    outline: none;
+    border-right: 16px solid transparent;
+  }
 
 .hood{
     flex-basis: 45%;
@@ -178,11 +216,15 @@ nav ul li a {
     background: #23A6F0;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;  
+    cursor: pointer; 
 }
 
 
 @media screen and (max-width:768px){
+    .header-con{
+        width: 90%;
+    }
     nav{
         display: none;
     }
@@ -208,6 +250,26 @@ nav ul li a {
         font-size: 28px;
         font-weight: 700;
     }
+
+    .map{
+        flex-basis: 100%;
+        margin-top: 15%;
+    }
+
+    .sort{
+        width: 100%;
+    }
+
+    .type img{
+        margin-left: 8px;
+        cursor: pointer;
+    }
+       
+    .hood img{
+        cursor: pointer;
+        margin-left: 8px;
+    }
+    
     
 
 }
@@ -305,6 +367,7 @@ nav ul li a {
 .properties{
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 
 .properties button{
@@ -323,6 +386,7 @@ nav ul li a {
 
 .fix{
     width: 100%;
+    object-fit: cover;
 }
 
 .div-one{
@@ -394,6 +458,9 @@ nav ul li a {
 }
 
 @media screen and (max-width:768px){
+    .list-con{
+        width: 90%;
+    }
     .prop-divs{
         flex-direction: column;
     }  
@@ -482,6 +549,131 @@ nav ul li a {
 
 
 
+.drag{
+    width: 85%;
+    margin: 0 auto; 
+    margin-bottom: 30px;  
+}
+
+.drag h2{
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+.contact{
+    margin-top: 3%;
+    padding: 30px;
+    background: #ffff;
+    box-shadow: 0 0 10px 0px #e1e1e1;  
+}
+
+.contact h4{
+    font-size: 28px;
+    font-weight: 800;
+    color: #F4511E;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+
+.first-col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+
+.middle-col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+
+.last-col{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 33%;
+}
+
+.form-bar{
+    width: 90%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.required::after{
+    content: "*";
+    color: #F4511E;
+    font-size: 12px;
+    font-weight: 800;
+    margin-left: 5px;
+
+}
+
+.form-bar input{
+    border: none;
+    outline: none;
+    background: #f9f9f9;
+    padding: 15px 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.form-bar select{
+    border: none;
+    outline: none;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
+
+.custom-select{
+    color: #818181;
+    font-size: 12px;
+    padding: 15px 16px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border-right: 16px solid transparent;
+  }
+
+.form-bar input::placeholder{
+  color: #818181;
+  font-size: 12px;
+}
+
+.upload h3{
+    margin-top: 5%;
+}
+
+.upload-box{
+    border: 2px dashed #F4511E;
+    border-radius: 8px;
+    padding:20px ;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.upload-box strong{
+    color: #F4511E;
+    cursor: pointer;
+}
+
+
+.upload-box p{
+    font-size: 14px;
+    margin-top: 5px;
+    color: #818181;
+}
 
 
 

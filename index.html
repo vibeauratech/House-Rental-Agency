@@ -35,7 +35,7 @@
 
                         <div class="cart">
                             <div class="menu">
-                                
+
                             </div>
                             <img src="close.png" class="close-cart" style="width: 25px; height: 25px; object-fit:cover ;">                  
                         </div>
@@ -54,20 +54,34 @@
                         <div class="sort">
                             <div class="sort-box">
                                 <div class="type">
-                                    <p>All Type</p>
-                                    <img src="drop.png" alt="">
+                                    <select class="custom-type">
+                                        <option value="all-type">All-Type</option>
+                                        <option value="1">Bungalow</option>
+                                        <option value="2">Duplex</option>
+                                        <option value="3">Penthouse</option>
+                                      </select>
                                 </div>
 
                                 <div class="hood">
-                                    <p>Neighbourhood</p>  
-                                    <img src="drop.png" alt="">                      
+                                    <div class="type">
+                                        <select class="custom-type">
+                                            <option value="all-type">Neighbourhood</option>
+                                            <option value="1">LA</option>
+                                            <option value="2">Texas</option>
+                                            <option value="3">Maryland</option>
+                                          </select>
+                                    </div>                      
                                 </div>
 
                                 <div class="search-icon">
-                                    <img src="icn search .icn-xs.png" alt="">
+                                    <img src="icn search .icn-xs.png" onclick="myFunction()" class="promo-text">
                                 </div>
-
                             </div>
+                        </div>
+
+                        <div class="promo">
+                            <input type="email" placeholder="Search..." class="promo-field">
+                            <button>Go</button>
                         </div>
                     </div>
                 </div>
@@ -104,12 +118,11 @@
                             <div class="icon-box">
                                 <img src="dollar.png" alt="">
                             </div>
-                            <p>Let's somebody else <br>
-                                take care of Landlord!</p>
+                            <p>Let's take <br> care of your <br> Land needs!</p>
                         </div>   
                     </div>
 
-                    <div class="icon-right" style="margin-top: 20%;">
+                    <div class="icon-right" style="margin-top: 10%;">
                         <div class="icon-flex">
                             <div class="icon-box">
                                 <img src="dollar.png" alt="">
@@ -354,11 +367,106 @@
                 <button>Search rooms</button>
             </div>
         </section>
+
+
+        <section class="drag">
+            <h2>Your property with us and be Confident that Your Room will be Filled Out!</h2>
+
+            <div class="contact">
+                <h4>Add A New Property</h4>
+                <div class="form">
+                    <form>
+                        <div class="first-col">
+                           <div class="form-bar">
+                            <label class="required">Name</label>
+                            <input type="text" placeholder="Enter Name">
+                           </div>
+
+                           <div class="form-bar">
+                            <label class="required" for="city">City</label>
+                           <select  id="city" class="custom-select">
+                                <option value="city">Select City</option>
+                                <option value="chicago">Chicago</option>
+                                <option value="dencer">Denver</option>
+                                <option value="La">Los Angeles</option>
+                           </select>
+                           </div>
+
+                           <div class="form-bar">
+                            <label class="required">Price</label>
+                            <input type="text" placeholder="Enter Price">
+                           </div>
+                        </div>
+
+                        <div class="middle-col">
+                           <div class="form-bar">
+                            <label class="required">Address</label>
+                            <input type="text" placeholder="Enter Address">
+                           </div>
+
+                           <div class="form-bar">
+                            <label class="required">State</label>
+                            <select name="" id="state"  class="custom-select">
+                                <option value="state">Select State</option>
+                                <option value="chicago">Chicago</option>
+                                <option value="dencer">Denver</option>
+                                <option value="La">Los Angeles</option>
+                           </select>
+                           </div>
+
+                           <div class="form-bar">
+                            <label class="required">Email</label>
+                            <input type="email" placeholder="Enter Email">
+                           </div>
+                        </div>
+
+                        <div class="last-col">
+                           <div class="form-bar">
+                            <label class="required">Unit Number</label>
+                            <input type="text" placeholder="Enter Unit">
+                           </div>
+
+                           <div class="form-bar">
+                            <label class="required">Room-Type</label>
+                            <select name="" id="room"  class="custom-select">
+                                <option value="room">Select Room-Type</option>
+                                <option value="master">Master</option>
+                                <option value="single">Single</option>
+                                <option value="dorm">Dorm</option>
+                           </select>
+                           </div>
+                        </div>
+                    </form>
+
+                    <form>
+                        <div>
+
+                        </div>
+                    </form>
+                </div>
+
+                <div class="upload">
+                    <h3>Upload Photos</h3>
+    
+                    <div class="upload-box">
+                        <span>Drag your images here, or <strong class="browse">browse</strong></span>
+                        <p>Supported:  JPG, JPEG, PNG</p>
+                    </div>
+                </div>
+
+                <button>Add New Property</button>
+
+            </div>
+        </section>
         
 
     </main>
 
-
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="script.js"></script>   
+    <script src="drag.js"></script>   
+    <script src="promo.js"></script>   
+    
 </body>  
 </html>
