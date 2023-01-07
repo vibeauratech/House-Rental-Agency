@@ -384,7 +384,7 @@
 
                            <div class="form-bar">
                             <label class="required" for="city">City</label>
-                           <select  id="city" class="custom-select">
+                            <select  id="city" class="custom-select">
                                 <option value="city">Select City</option>
                                 <option value="chicago">Chicago</option>
                                 <option value="dencer">Denver</option>
@@ -429,7 +429,7 @@
                            <div class="form-bar">
                             <label class="required">Room-Type</label>
                             <select name="" id="room"  class="custom-select">
-                                <option value="room">Select Room-Type</option>
+                                <option value="room">Select Room Type</option>
                                 <option value="master">Master</option>
                                 <option value="single">Single</option>
                                 <option value="dorm">Dorm</option>
@@ -438,11 +438,12 @@
                         </div>
                     </form>
 
-                    <form>
-                        <div>
-
+                    <div class="spread">
+                        <div class="form-bar">
+                            <label class="required">Description</label>
+                            <textarea rows="5" placeholder="Enter Description"></textarea>
                         </div>
-                    </form>
+                    </div>
                 </div>
 
                 <div class="upload">
@@ -454,10 +455,143 @@
                     </div>
                 </div>
 
+               <div class="drag-btn">
                 <button>Add New Property</button>
+               </div>
 
             </div>
         </section>
+        
+
+        <section class="testimonial">
+            <div class="img-slider">
+                <div class="slider">
+                    <div class="slide active">
+                        <div class="slide-con">
+                           <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                             Amet, quod aliquam doloremque at molestiae exercitationem consequatur
+                             repellat perferendis architecto laborum eligendi suscipit odio explicabo.
+                             Quidem accusantium quia blanditiis mollitia numquam.
+                           </p>
+
+                           <div class="info">
+                                <img src="Ellipse 4.png" >
+
+                                <div>
+                                    <p>Harry Wilson</p>
+                                    <span>House Owner</span>
+                                </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-con">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                 Amet, quod aliquam doloremque at molestiae exercitationem consequatur
+                                 repellat perferendis architecto laborum eligendi suscipit odio explicabo.
+                                 Quidem accusantium quia blanditiis mollitia numquam.
+                               </p>
+    
+                               <div class="info">
+                                    <img src="Ellipse 4.png" >
+    
+                                    <div>
+                                        <p>Mike Dean</p>
+                                        <span>Tenant</span>
+                                    </div>
+                               </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-con">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                 Amet, quod aliquam doloremque at molestiae exercitationem consequatur
+                                 repellat perferendis architecto laborum eligendi suscipit odio explicabo.
+                                 Quidem accusantium quia blanditiis mollitia numquam.
+                               </p>
+    
+                               <div class="info">
+                                    <img src="Ellipse 4.png" >
+    
+                                    <div>
+                                        <p>Hank Toms</p>
+                                        <span>Agent</span>
+                                    </div>
+                               </div>
+                        </div>
+                    </div>
+                </div>   
+                
+                <div class="navigation">
+                    <div class="btn" id="prev"></div>
+                    <div class="btn" id="next"></div>
+                </div>              
+            </div>
+
+            <div class="playback">
+                <img src="content-card-item-8.png" alt="">
+            </div>          
+        </section>
+
+
+        <footer>
+            <div class="footer-con">
+                <h2>Logo</h2>
+
+                <div class="con-info">
+                    <p><img src="location.png" alt=""> 345 Faulconer Drive, Suite 4 • Charlottesville, CA, 12345</p>
+
+                    <div class="lines">
+                        <p><img src="phone.png"> (123) 456-7890</p>
+                        <p><img src="round-local-printshop-24px.png">(123) 456-7890</p>
+                    </div>
+
+                    <div class="media">
+                        <p>Social Media</p>
+
+                       <div class="handles">
+                        <div>
+                            <img src="facebook black.1.png">
+                            <img src="twitter black.1.png">
+                            <img src="LinkedIn.png">
+                            <img src="Youtube.png">
+                        </div>
+
+                        <div>
+                            <img src="instagram black.1.png">
+                            <img src="googleplus black.1.png">
+                            <img src="pinterest color.1.png">
+                            <img src="rss black.1.png">
+                        </div>
+                       </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="more-info">
+               <div class="more">
+                <div class="more-con">
+                    <p>ABOUT US</p>
+                    <p>CONTACT US</p>
+                    <p>HELP</p>
+                </div>
+
+                <div class="more-con">
+                    <p>PRIVACY POLICY</p>
+                    <p>DISCLAIMER</p>
+                </div>
+
+               </div>
+
+               <div class="copyright">
+                <p>Copyright&copy; 2022 Minimumlivingcost. All rights reserved</p>
+               </div>
+            </div>
+        </footer>
         
 
     </main>
@@ -467,6 +601,7 @@
     <script src="script.js"></script>   
     <script src="drag.js"></script>   
     <script src="promo.js"></script>   
+    <script src="slide.js"></script>   
     
 </body>  
 </html>
