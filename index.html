@@ -34,10 +34,28 @@
                         </div>
 
                         <div class="cart">
+                            <img src="close.png" class="close-cart" style="width: 25px; height: 25px; object-fit:cover ;"> 
                             <div class="menu">
+                                <h2>Links</h2>
 
-                            </div>
-                            <img src="close.png" class="close-cart" style="width: 25px; height: 25px; object-fit:cover ;">                  
+                                <div class="links">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">Landlord</a></li>
+                                    <li><a href="">Tenants</a></li>
+                                    <li><a href="">Contact Us</a></li>              
+                                </div>
+
+                                <div class="spec">
+                                    <span>SOCIALS</span>
+
+                                    <div>
+                                        <p>INSTAGRAM</p>
+                                        <p>TWITTER</p>
+                                        <p>FACEBOOK</p>
+                                    </div>
+                                </div>
+
+                            </div>                 
                         </div>
                     </div>
                 </div>
@@ -79,9 +97,8 @@
                             </div>
                         </div>
 
-                        <div class="promo">
+                        <div class="promo" id="myDIV" >
                             <input type="email" placeholder="Search..." class="promo-field">
-                            <button>Go</button>
                         </div>
                     </div>
                 </div>
@@ -450,8 +467,9 @@
                     <h3>Upload Photos</h3>
     
                     <div class="upload-box">
-                        <span>Drag your images here, or <strong class="browse">browse</strong></span>
+                        <span class="drop-drag">Drag your images here, or <strong class="browse">browse</strong></span>
                         <p>Supported:  JPG, JPEG, PNG</p>
+                        <input class="input" type="file" hidden>
                     </div>
                 </div>
 
@@ -603,7 +621,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="script.js"></script>   
     <script src="drag.js"></script>   
-    <script src="promo.js"></script>   
+    <script src="search.js"></script>   
     <script src="slide.js"></script>   
     
 </body>  
