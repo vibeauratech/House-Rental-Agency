@@ -1,45 +1,26 @@
-const slides = document.querySelectorAll('.slide');
-const next = document.querySelector('#next');
-const prev = document.querySelector('#prev');
-const auto = false;
-const intervalTime = 5000;
+var slides = document.querySelectorAll('.slide');
+var btns = document.querySelectorAll('.btn');
 
-let slideInterval;
+let currentSlide = 1;
 
-const nextSlide = () => {
+//javascript for slide
+var manualNav = function(manual){
+    slides.forEach((slide) => {
+        slide.classList.remove('active');
+    })
 
-  const active =document.querySelector('.active');
-  
-  active.classList.remove('active');
+    btns.forEach((btn) => {
+        btn.classList.remove('active');
+    })
 
-  if(active.nextElementSibling) {
-    active.nextElementSibling.classList.add('active');
-  }else{
-    slides[0].classList.add('active')
-  }
-  setTimeout(() => active.classList.remove('active'));
-
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
 }
 
-const prevSlide = () => {
 
-  const active =document.querySelector('.active');
-  
-  active.classList.remove('active');
-
-  if(active.previousElementSibling) {
-    active.previousElementSibling.classList.add('active');
-  }else{
-    slides[slides.length - 1].classList.add('active')
-  }
-  setTimeout(() => active.classList.remove('active'));
-
-}
-
-next.addEventListener('click', e =>{
-  nextSlide();
-});
-
-prev.addEventListener('click', e =>{
-  prevSlide();
-});
+btns.forEach((btn, i) =>{
+    btn.addEventListener("click", () => {
+        manualNav(i);
+        currentSlide = i;
+    })
+})

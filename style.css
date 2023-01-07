@@ -786,21 +786,20 @@ form{
 .testimonial{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     background: #FFF0EB;
     margin-top: 5%;
 }
 
 .img-slider{
     flex-basis: 47%;
+    padding-top: 15%;
     padding-left: 5%;
-    position: relative;
 }
 
 .slider{
     position: relative;
+    height: 45vh;
 }
-
 
 .slide{
     position: absolute;
@@ -814,6 +813,15 @@ form{
 
 .slide.active{
     opacity: 1;
+}
+
+.quote{
+    margin-left: -40px;
+}
+
+.slide-con p{
+    margin-top: -20px;
+
 }
 
 .info{
@@ -841,7 +849,6 @@ form{
 
 .navigation{
     display: flex;
-    margin-top: 35%;
 }
 
 .btn{
@@ -856,6 +863,10 @@ form{
     margin-right: 0;
 }
 
+.btn.active{
+    background: #F4511E;
+}
+
 @media screen and (max-width:990px){
     .testimonial{
         flex-direction: column;
@@ -863,12 +874,17 @@ form{
 
     .img-slider{
         flex-basis: 100%;
-        padding-left: 0;
+        padding-top: 30px;
+        margin-bottom: 10%;
     }
 
+    .slider{
+        height: 55vh;
+    }
 
     .playback{
         flex-basis: 100%;
+        margin-top: 10%;
     }
 }
 
@@ -991,6 +1007,15 @@ footer{
         flex-direction: column;
     }
 
+    .lines{
+        flex-direction: column;
+        margin-top: 30px;
+    }
+
+    .lines p{
+        margin-bottom: 20px;
+    }
+
     .con-info{
         margin-top: 5%;
     }
@@ -1003,10 +1028,7 @@ footer{
     .handles div{
         margin-right: 0;
         margin-bottom: 10%;
-    }
-    
-   
-    
+    }  
 
     .media{
         margin-top: 10%;
@@ -1025,20 +1047,20 @@ footer{
 
     .more-con{
         flex-direction: column;
-        margin-top: 5%;        
+        margin-top: 5%;  
+        margin-right: 0;      
     }
 
     .more-con p{
         margin-right: 0;
         margin-bottom: 20px;
+        margin-right: 0;
     }
 
     .copyright p{
         text-align: center;
     }
 }
-
-
 
 
 
