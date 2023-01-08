@@ -521,28 +521,6 @@ header{
 }
 
 
-.glider{
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
-    overflow: hidden;
-    height: 168vh;
-}
-
-.glide{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.4s ease-in-out;
-}
-
-.glide.active{
-    opacity: 1;
-}
-
 .prop-divs{
     margin-top: 50px;
     display: flex;
@@ -662,7 +640,6 @@ header{
         margin: 0 auto;
         position: relative;
         overflow: hidden;
-        height: 235vh;
     }
     
 
