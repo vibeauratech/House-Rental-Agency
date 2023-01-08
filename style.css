@@ -657,6 +657,15 @@ header{
         width: 90%;
     }
 
+    .glider{
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+        overflow: hidden;
+        height: 180vh;
+    }
+    
+
     .properties span{
         font-size: 14px;
         font-weight: 800;
