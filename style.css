@@ -58,7 +58,7 @@
     position: fixed; 
     width: 100%; 
     height: 80px;
-    background: transparent;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +70,9 @@
 .nav-bar div img{
     width: 147px;
     height: 50px;
+    margin-left: 52%;
     object-fit: cover;
+    
 }
 nav ul{
     display: flex;
@@ -323,6 +325,12 @@ header{
         display: none;
     }
 
+    .nav-bar div img{
+        margin-left: 5%;
+        object-fit: cover;
+        
+    }
+
     .menu nav{
         display: block;
     }
@@ -338,7 +346,7 @@ header{
     .header-con{
         flex-direction: column;
     }
-    
+
     .head-text {
         flex-basis: 100%;
     }
@@ -510,6 +518,29 @@ header{
     color: #fff;
     background: #F4511E;
     padding: 15px 18px;
+}
+
+
+.glider{
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    height: 168vh;
+}
+
+.glide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.glide.active{
+    opacity: 1;
 }
 
 .prop-divs{

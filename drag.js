@@ -35,7 +35,7 @@ dropArea.addEventListener("drop", (event) =>{
     //console.log("File has dropped on DragArea");
 });
 
-file = event.dataTransfer.files[0];
+
 showFile(); // calling function
 
 let fileType = file.type;
