@@ -101,7 +101,7 @@ nav ul li.active ::after{
     background: white;
     display: block;
     margin: auto;
-    transition: 0.5s;
+    transition: all .3s ease-in-out;
 }
 
 nav ul li :last-child{
@@ -121,7 +121,7 @@ nav ul li :last-child{
     background: white;
     display: block;
     margin: auto;
-    transition: 0.5s;
+    transition: all .3s ease-in-out;
 }
 
 nav ul li:hover::after{

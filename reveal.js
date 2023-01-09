@@ -9,7 +9,7 @@ sr.reveal('.head-text',{
   delay:800,
   origin:'left'
 })
-sr.reveal('.mapped-img',{
+sr.reveal('.map-embed',{
   delay:200,
   origin:'bottom'
 })
